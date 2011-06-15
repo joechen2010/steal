@@ -1,0 +1,138 @@
+.MainContainer .side{
+	width:250px;
+	padding-left:10px;
+}
+.dragcont .head{
+	height:30px;
+	overflow:hidden;
+	background:url(head6.gif) right top no-repeat;
+	line-height:33px;
+}
+.dragcont .head .tag{
+	background:url(head6.gif) left top no-repeat;
+	float:left;
+	padding-left:30px;
+	padding-right:80px;
+	font-size:14px;
+	font-weight:bold;	
+}
+.dragcont .head .more{
+	float:right;
+	padding-right:10px;	
+}
+.dragcont .cont{
+	border:#D0D0D0 solid 1px;
+	border-top:0;
+	padding:10px;
+}
+.dragcont .cont .action{
+	height:25px;
+	line-height:25px;
+	text-align:right;
+}
+.dragcont .cont .title{
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	color:#f00;
+}
+.dragcont .cont .info{
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	border-bottom:#DDD solid 1px;
+}
+.dragcont .cont .conttent{
+	padding:10px 5px 5px 5px;
+	line-height:20px;
+	font-size:14px;
+}
+.dragcont .cont .page{
+	height:30px;
+	line-height:30px;
+	text-align:center;
+}
+.dragcont .cont .page a{
+	border:#DDD solid 1px;
+	padding:3px;
+}
+.dragcont .cont .moreaction{
+	height:25px;
+	line-height:25px;
+	text-align:right;
+}
+.dragcont .cont .updown{
+	height:30px;
+	overflow:hidden;
+	line-height:30px;
+}
+.dragcont .cont .updown .left{
+	width:49%;
+	float:left;
+}
+.dragcont .cont .updown .right{
+	width:49%;
+	float:right;
+	text-align:right;
+}
+.dragcont .cont .tdl{
+	width:80px;
+	line-height:25px;
+	text-align:right;
+	padding-right:10px;
+}
+.dragcont .cont .tdr{
+	padding-top:5px;
+}
+.listcomment{
+	margin-bottom:5px;
+}
+.listcomment .img{
+	width:45px;
+	padding:10px 20px 10px 10px;
+	background:url(iconbg.gif) 6px 5px no-repeat;
+}
+.listcomment .c{
+	padding-top:3px;
+	line-height:20px;
+	color:#666;
+}
+.listcomment .m{
+	height:25px;
+	line-height:25px;
+	border-top:#DDD dotted 1px;
+	border-bottom:#DDD solid 1px;
+	padding-left:5px;
+	color:#888;
+}
+.listcomment .m span{
+	color:#f00;
+}
+.listcomment .m em{
+	color:#00f;
+	font-style:normal;
+}
+.nocomment{
+	line-height:50px;
+	text-align:center;
+	font-size:18px;
+	color:#999;
+	font-weight:bold;
+}
+
+.dragcont .cont .listsort{
+	height:30px;
+	line-height:30px;
+	padding-left:25px;
+	font-weight:bold;
+	background:url(pointer.gif) 5px 10px no-repeat;
+}
+.dragcont .cont .list{
+	height:23px;
+	line-height:23px;
+	overflow:hidden;
+	padding-left:15px;
+	background:url(nd0.gif) 5px 10px no-repeat;
+}

@@ -1,0 +1,125 @@
+.MainContainer .side{
+	width:250px;
+	padding-left:10px;
+}
+.showsort{
+	border:#C1DFF4 solid 1px;
+	background:#E9F3FB;
+	padding:2px;
+}
+.showsort .head{
+	background:#fff url(array.gif) 10px 12px no-repeat;
+	padding:5px 0 0 25px;
+	line-height:25px;
+	font-weight:bold;
+}
+.showsort .cont{
+	background:#fff;
+	padding:5px 10px 10px 25px;
+	line-height:20px;
+	word-spacing:10px;
+}
+.showcont .head{
+	height:29px;
+	overflow:hidden;
+	line-height:32px;
+	background:url(head4.gif) right top no-repeat;
+}
+.showcont .head .tag{
+	float:left;
+	padding-left:20px;
+	background:url(tag2.gif) left top no-repeat;
+}
+.showcont .head .tag span{
+	display:block;
+	padding-right:50px;
+	background:url(tag2.gif) right top no-repeat;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+}
+.showcont .cont{
+	border:#C1DFF4 solid 1px;
+	padding:5px 0 5px 0;
+}
+.listcont .td1{
+	width:120px;
+}
+.listcont .td3,.listcont .td4{
+	width:100px;
+	text-align:center;
+	vertical-align:middle;
+}
+.listcont .h td{
+	border-bottom:#FDDCB7 dotted 1px;
+	height:25px;
+	padding-top:5px;
+	vertical-align:middle;
+	color:#103957;
+}
+.listcont .c td{
+	border-bottom:#DDD dotted 1px;
+}
+.listcont .c td.td1{
+	padding:10px;
+}
+.listcont .c td.td1 a{
+	display:block;
+	border:#DDD solid 1px;
+	padding:1px;
+}
+.listcont .c td.td2{
+	padding-top:5px;
+	line-height:20px;
+}
+.listcont .c .title {
+	line-height:30px;
+	height:30px;
+	overflow:hidden;
+}
+.listcont .c .title a{
+	font-size:14px;
+	font-weight:bold;
+	color:#00349A;
+	text-decoration:underline;	
+}
+.listcont .c td.td3{
+	line-height:20px;
+}
+.listcont .c td.td3 div{
+	font-weight:bold;
+	color:#f60;
+}
+.listcont .page{
+	padding:5px;
+	text-align:center;
+	line-height:25px;
+}
+.listcont .page a{
+	border:#DDD solid 1px;
+	padding:3px 5px 2px 5px;
+}
+.sidecont .head{
+	height:34px;
+	line-height:34px;
+	background:url(head5.gif) right top no-repeat;
+}
+.sidecont .head .tag{
+	float:left;
+	padding-left:15px;
+	font-weight:bold;
+	font-size:14px;
+	background:url(head5.gif) left top no-repeat;
+}
+.sidecont .cont{
+	border:#C1DFF4 solid 1px;
+	border-top:0;
+	padding:10px;
+	line-height:23px;
+}
+.sidecont .cont .list{
+	height:23px;
+	overflow:hidden;
+	padding-left:15px;
+	background:url(icon.gif) 1px 9px no-repeat;
+}

@@ -1,0 +1,93 @@
+<!--
+<?php
+print <<<EOT
+--> 
+<link rel="stylesheet" type="text/css" href="$webdb[www_url]/images/$STYLE/sell/list.css">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer">
+  <tr>
+    <td class="main">
+    	<div class="showsort">
+        	<div class="head"><div class="tag">分类</div></div>
+            <div class="cont">
+<!--
+EOT;
+$array=$Fid_db[$fid]?$Fid_db[$fid]:$Fid_db[$fidDB[fup]];
+foreach($array AS $fkey=>$fvalue){
+$color = $fid == $fkey? " style=\"color:red\"":'';
+print <<<EOT
+-->
+			<a href="list.php?fid=$fkey"$color>$fvalue</a>
+ <!--
+EOT;
+}print <<<EOT
+-->
+            </div>
+        </div>
+        <div class="showcont mt10">
+        	<div class="head"><div class="tag"><span>$fidDB[name]</span></div></div>
+            <div class="cont">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="listcont">
+                  <tr class="h">
+                    <td class="td1">&nbsp;</td>
+                    <td class="td2">求购信息</td>
+                    <td class="td3" style="width:150px;">期望价格/采购数量</td>
+                    <td class="td4">商家认证</td>
+                  </tr>
+<!--
+EOT;
+foreach($listdb AS $key=>$rs){
+print <<<EOT
+-->
+                  <tr class="c">
+                    <td class="td1">
+                    <a href="bencandy.php?fid=$rs[fid]&id=$rs[id]" target="_blank"><img src="$rs[picurl]" onError="this.src='$webdb[www_url]/images/default/nopic.jpg'" width="120" height="90"></a>
+                    </td>
+                    <td class="td2">
+                    	<div class="title"><a href="bencandy.php?fid=$rs[fid]&id=$rs[id]" target="_blank" title='$rs[full_title]' style="color:$rs[titlecolor];">$rs[title]</a></div>
+                        <div class="other">日期:{$rs[posttime]} 浏览:{$rs[hits]}次</div>
+                        <div class="other">
+<!----> 
+                        </div>
+                    </td>
+                    <td class="td3"><div class="price">￥{$rs[price]} 元</div>{$rs[order_num]} {$rs[my_units]}</td>
+                    <td class="td4"><img alt="{$renzhengDB[$rs[renzheng]]}" src="$webdb[www_url]/images/$STYLE/sell/renzheng{$rs[renzheng]}.gif"></td>
+                  </tr>
+<!--
+EOT;
+}if($showpage){print <<<EOT
+-->
+				  <tr>
+                    <td colspan="4" class="page">$showpage</td>
+                  </tr>
+<!--
+EOT;
+}print <<<EOT
+-->
+                </table>
+            </div>
+        </div>
+    </td>
+    <td class="side">
+    	<div class="sidecont">
+        	<div class="head"><div class="tag">火热求购信息</div></div>
+            <div class="cont">
+<!--
+EOT;
+$array=list_title('hot',8);
+foreach($array AS $rs){print <<<EOT
+-->
+             
+            <div class="list"><a href="bencandy.php?fid=$rs[fid]&id=$rs[id]" target="_blank">$rs[title]</a></div>
+<!--
+EOT;
+}print <<<EOT
+-->
+            </div>
+        </div>
+    </td>
+  </tr>
+</table>
+<!--
+EOT;
+?>
+-->

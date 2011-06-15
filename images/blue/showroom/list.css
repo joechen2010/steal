@@ -1,0 +1,82 @@
+.MainContainer .side{
+	width:250px;
+	padding-right:10px;
+}
+.sortcont .head{
+	height:33px;
+	line-height:35px;
+	overflow:hidden;
+	background:url(head4.gif) right top no-repeat;
+}
+.sortcont .head .tag{
+	float:left;
+	padding:0 80px 0 20px;
+	background:url(head4.gif) left top no-repeat;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+}
+.sortcont .cont{
+	border:#dfdfdf solid 1px;
+	border-top:0;
+	padding:5px 0 5px 0;
+}
+.sortcont .cont .listsort{
+	height:30px;
+	line-height:30px;
+	background:url(dottom.gif) center bottom no-repeat;
+	padding-left:30px;
+}
+.sortcont .cont .listsort a{
+	display:block;
+	padding-left:20px;
+	background:url(icon.gif) 2px 11px no-repeat;
+}
+.sortcont .cont .h{
+	margin-top:10px;
+	height:38px;
+	line-height:38px;
+	background:url(head5.gif) center top no-repeat;
+}
+.sortcont .cont .h .tg{
+	padding-left:30px;
+	background:url(icon.gif) 15px 14px no-repeat;
+	color:#2575B8;
+	font-weight:bold;
+	font-size:14px;
+}
+.sortcont .cont .c .list{
+	padding:5px 15px 0 15px;
+	line-height:18px;
+}
+.drag .head{
+	height:33px;
+	background:url(head3.gif) right top no-repeat;
+}
+.drag .head .tag{
+	float:left;
+	padding:3px 80px 0 20px;
+	line-height:30px;
+	background:url(head3.gif) left top no-repeat;
+	font-size:14px;
+	font-weight:bold;
+}
+.drag .cont{
+	border:#DBDBDB solid 1px;
+	border-top:0;
+	padding:5px;
+	line-height:25px;
+}
+.listtable .h td{
+	border-bottom:#DBDBDB dotted 1px;
+	color:#E65900;
+	font-weight:bold;
+}
+.listtable .h td.td1{
+	padding-left:10px;
+}
+.listtable td.td1 a{
+	float:left;
+	padding-left:20px;
+	background:url(array.gif) 8px 10px no-repeat;
+}

@@ -1,0 +1,293 @@
+.MainContainer .sideL{
+	width:275px;
+}
+.MainContainer .sideC{
+	width:440px;
+	padding:0 10px 0 10px;
+}
+.MainContainer .mainR{
+	padding-left:10px;
+}
+/*
+*第一栏
+*/
+.joinhy{
+	height:187px;
+	background:url(hybg.gif) center top no-repeat;
+}
+.joinhy .head{
+	height:40px;
+	line-height:40px;
+}
+.joinhy .head .tag{
+	float:left;
+	padding-left:10px;
+	font-size:14px;
+	font-weight:bold;
+}
+.joinhy .head .more{
+	float:right;
+	padding-right:10px;
+}
+.joinhy .why{
+	line-height:40px;
+	padding-left:20px;
+	padding-top:5px;
+}
+.joinhy .why a{
+	display:block;
+	height:40px;
+	background:url(why.gif) left 10px no-repeat;
+}
+.joinhy .why a span{
+	display:none;
+}
+.joinhy .how{
+	padding-left:25px;
+	line-height:20px;
+	color:#666;
+}
+.joinhy .how a{
+	color:#666;
+}
+.joinhy .at{
+	text-align:center;
+	padding-top:5px;
+	word-spacing:10px;
+}
+.hyslide{
+	width:440px;
+	height:187px;
+	overflow:hidden;
+}
+.tzhycont .head{
+	height:31px;
+	background:url(head1.gif) right top no-repeat;
+	overflow:hidden;
+	line-height:35px;
+}
+.tzhycont .head .tag{
+	float:left;
+	padding-left:20px;
+	background:url(head1.gif) left top no-repeat;
+	font-size:14px;
+	font-weight:bold;
+}
+.tzhycont .head .more{
+	float:right;
+	padding-right:10px;
+}
+.tzhycont .cont{
+	border:#D5D1D1 solid 1px;
+	border-top:0;
+	padding:10px;
+	line-height:22px;
+	height:135px;
+}
+.tzhycont .cont .list{
+	height:22px;
+	overflow:hidden;
+	padding-left:20px;
+	background:url(icon.gif) left 5px no-repeat;
+}
+/*
+*第二栏
+*/
+.sidecont .head{
+	height:31px;
+	background:url(head2.gif) right top no-repeat;
+	overflow:hidden;
+	line-height:35px;
+}
+.sidecont .head .tag{
+	float:left;
+	background:url(head2.gif) left top no-repeat;
+	padding:0 50px 0 35px;
+	font-size:14px;
+	font-weight:bold;
+}
+.sidecont .head .more{
+	float:right;
+	padding-right:10px;
+}
+.sidecont .cont{
+	border:#D5D1D1 solid 1px;
+	border-top:0;
+	padding-left:5px;
+	height:150px;
+}
+.sidecont .cont .listpic{
+	width:131px;
+	height:70px;
+	float:left;
+	border-bottom:#DDD dotted 1px;
+}
+.sidecont .cont .listpic a{
+	display:block;
+	text-align:center;
+	color:#003278;
+}
+.sidecont .cont .listpic img{
+	margin:12px auto 5px auto;
+}
+.sidecont .comanycont{
+	border:#D5D1D1 solid 1px;
+	border-top:0;
+}
+.sidecont .comanycont .title{
+	width:440px;
+	padding:5px;
+}
+.sidecont .comanycont .title .array{
+	width:200px;
+	height:23px;
+	line-height:23px;
+	padding-left:20px;
+	overflow:hidden;
+	float:left;
+	background:url(array.gif) 5px 7px no-repeat;
+}
+.sidecont .comanycont .pic{
+	vertical-align:middle;
+	height:150px;
+}
+/*
+*第三栏
+*/
+.sidecont1{
+	border:#DBDBDB solid 1px;
+}
+.sidecont1 .head{
+	height:30px;
+	background:url(head3.gif) left top repeat-x;
+}
+.sidecont1 .head .tag{
+	float:left;
+	padding:8px 0 0 10px;
+	font-size:14px;
+	font-weight:bold;
+}
+.sidecont1 .head .more{
+	float:right;
+	padding:9px 10px 0 0;
+}
+.sidecont1 .cont{
+	padding:10px;
+	line-height:23px;
+}
+.sidecont1 .cont div{
+	height:23px;
+	overflow:hidden;
+	padding-left:25px;
+}
+.sidecont1 .numlist1 .n1{
+	background:url(num1.gif) left 2px no-repeat;
+}
+.sidecont1 .numlist1 .n2{
+	background:url(num1.gif) left -23px no-repeat;
+}
+.sidecont1 .numlist1 .n3{
+	background:url(num1.gif) left -48px no-repeat;
+}
+.sidecont1 .numlist1 .n4{
+	background:url(num1.gif) left -73px no-repeat;
+}
+.sidecont1 .numlist1 .n5{
+	background:url(num1.gif) left -98px no-repeat;
+}
+.sidecont1 .numlist1 .n6{
+	background:url(num1.gif) left -123px no-repeat;
+}
+.sidecont1 .numlist1 .n7{
+	background:url(num1.gif) left -148px no-repeat;
+}
+.sidecont1 .numlist1 .n8{
+	background:url(num1.gif) left -173px no-repeat;
+}
+.sidecont1 .numlist1 .n9{
+	background:url(num1.gif) left -198px no-repeat;
+}
+.sidecont1 .numlist1 .n10{
+	background:url(num1.gif) left -221px no-repeat;
+}
+.sidecont1 .numlist2 .n1{
+	background:url(num2.gif) 2px top no-repeat;
+}
+.sidecont1 .numlist2 .n2{
+	background:url(num2.gif) 2px -19px no-repeat;
+}
+.sidecont1 .numlist2 .n3{
+	background:url(num2.gif) 2px -39px no-repeat;
+}
+.sidecont1 .numlist2 .n4{
+	background:url(num2.gif) 2px -59px no-repeat;
+}
+.sidecont1 .numlist2 .n5{
+	background:url(num2.gif) 2px -79px no-repeat;
+}
+.sidecont1 .numlist2 .n6{
+	background:url(num2.gif) 2px -99px no-repeat;
+}
+.sidecont1 .numlist2 .n7{
+	background:url(num2.gif) 2px -119px no-repeat;
+}
+.sidecont1 .numlist2 .n8{
+	background:url(num2.gif) 2px -139px no-repeat;
+}
+.sidecont1 .numlist2 .n9{
+	background:url(num2.gif) 2px -159px no-repeat;
+}
+.sidecont1 .numlist2 .n10{
+	background:url(num2.gif) 2px -179px no-repeat;
+}
+.sortcont .head{
+	height:31px;
+	overflow:hidden;
+	background:url(head4.gif) right top no-repeat;
+	line-height:35px;
+}
+.sortcont .head .tag{
+	float:left;
+	padding:0 50px 0 25px;
+	background:url(head4.gif) left top no-repeat;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+}
+.sortcont .head .more{
+	float:right;
+	padding:0 15px 0 18px;
+	background:url(postbut.gif) left 6px no-repeat;
+}
+.sortcont .cont{
+	border:#DBDBDB solid 1px;
+	border-top:0;
+}
+#ShowSortTable td{
+	width:50%;
+}
+#ShowSortTable .havebg{
+	background:#FAFCFE;
+}
+#ShowSortTable .choose{
+	background:#E2F0FB;
+}
+#ShowSortTable .big_name{
+	padding:8px 10px 5px 15px;
+}
+#ShowSortTable .big_name a{
+	font-size:14px;
+	font-weight:bold;
+	color:#004499;
+}
+#ShowSortTable .smll_name{
+	padding:0 5px 5px 15px;
+	line-height:20px;
+	color:#999;
+}
+#ShowSortTable .smll_name a{
+	color:#666;
+}
+#ShowSortTable .smll_name a.more{
+	color:#FF6600;
+}

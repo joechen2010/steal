@@ -1,0 +1,120 @@
+.MainContainer .MainL{
+	padding-right:10px;
+	width:720px;
+}
+.md10{
+	margin-bottom:10px;
+}
+
+/*
+*列表样式
+*/
+.brandlist .head{
+	height:33px;
+	background:url(head5.gif) right top no-repeat;
+}
+.brandlist .head .tag{
+	float:left;
+	padding:3px 100px 0 15px;
+	line-height:30px; 
+	background:url(head5.gif) left top no-repeat;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+}
+.brandlist .head .more{
+	float:right;
+	padding:3px 15px 0 0;
+	line-height:30px;
+	word-spacing:15px;
+}
+.brandlist .head .more .ch{
+	color:red;
+}
+.brandlist .cont{
+	border:#dfdfdf solid 1px;
+	border-top:0;
+	padding:5px;
+}
+.listtable td{
+	vertical-align:middle;
+	text-align:center;
+	border-bottom:#DDD dotted 1px;
+}
+.listtable td span{
+	color:#888;
+}
+.listtable td.butter,.listtable td.word{
+	text-align:left;
+}
+.listtable td.butter{
+	padding:5px 0 5px 30px;
+	background:url(to_down.gif) 8px 10px no-repeat;
+}
+.listtable .d td.butter{
+	background:url(to_top.gif) 8px 6px no-repeat;
+	border-bottom:0;
+}
+.listtable .pic{
+	width:110px;
+	padding:10px 20px 10px 15px;
+	background:url(picbg.gif) 9px 6px no-repeat;
+}
+.listtable .pic a{
+	display:block;
+	height:40px;
+	overflow:hidden;
+}
+.listtable td.word{
+	line-height:23px;
+	color:#888;
+}
+.listtable td.word .t{
+	font-size:14px;
+	font-weight:bold;
+}
+.listtable td.page{
+	line-height:30px;
+	border-bottom:0;
+	text-align:center;
+}
+.listtable td.page a{
+	border:#DDD solid 1px;
+	padding:3px;
+}
+.sidecont .head{
+	height:36px;
+	line-height:36px;
+	background:url(head4.gif) right top no-repeat;
+}
+.sidecont .head .tag{
+	float:left;
+	padding:0 80px 0 15px;
+	background:url(head4.gif) left top no-repeat;
+	font-size:14px;
+	font-weight:bold;
+}
+.sidecont .cont{
+	border:#BFDBF8 solid 1px;
+	border-top:0;
+	padding:5px 10px 10px 10px;
+}
+.sidecont .cont .list{
+	height:23px;
+	overflow:hidden;
+	line-height:23px;
+	padding-left:15px;
+	background:url(nd0.gif) 5px 9px no-repeat;
+}
+.sidecont .note{
+	text-indent:25px;
+	line-height:20px;
+	color:#666;
+}
+.sidecont .cont .lista{
+	height:23px;
+	overflow:hidden;
+	line-height:23px;
+	padding-left:20px;
+	background:url(array1.gif) 5px 7px no-repeat;
+}

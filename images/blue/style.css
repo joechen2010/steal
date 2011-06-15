@@ -1,0 +1,463 @@
+/*样式初始化*/
+body, form, ul, li, p, dl, dd, dt ,h,td,th,h3{
+	margin: 0;
+	padding: 0;
+}
+li,ul{
+	list-style: none;
+}
+td{
+	color: #333333;
+	VERTICAL-ALIGN: top;
+}
+input,textarea{
+	border:1px solid #ccc;
+}
+img{
+	border:0;
+}
+
+a {
+	font-size: 12px;
+}
+a:link {
+	color: #333333;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #333333;
+}
+a:hover {
+	text-decoration: underline;
+	color: #4E667B;
+}
+a:active {
+	text-decoration: none;
+}
+body{
+	font-size:12px;
+}
+.wrap{
+	width:980px;
+	margin:auto;
+	padding-top:8px;
+}
+.mt10{
+	margin-top:10px;
+}
+/*******************************************网站头部************************************/
+/*
+*顶部样式
+*/
+.TopContainer{
+	height:26px;
+	width:980px;
+	margin:auto;
+	background:url(topbg.gif) left top repeat-x;
+}
+.TopContainer .toplogin{
+	height:26px;
+	overflow:hidden;
+	float:left;	
+	padding-left:35px;
+	background:url(topicon.gif) 8px 8px no-repeat;
+}
+.TopContainer .toplogin div{
+	float:left;
+	padding-right:10px;
+	line-height:30px;
+}
+.TopContainer .toplogin div a{
+	color:#005BC2
+}
+.TopContainer .toplogin div span{
+	color:#FF6A00;
+}
+.TopContainer .toplogin .login_input{
+	width:100px;
+	height:15px;
+	margin-top:3px;
+	margin-right:5px;
+}
+.TopContainer .toplogin .login_sub{
+	margin-top:3px;
+	color:#FF6A00;
+	height:20px;
+	line-height:20px;
+	background:#FFF;
+}
+#top_help,#top_link{
+	float:right;
+	height:26px;
+	overflow:hidden;
+	line-height:30px;
+}
+#top_help{
+	color:#FF6A00;
+	padding:0 10px 0 10px;
+}
+/*
+* logo样式
+*/
+.LogoContainer{
+	width:980px;
+	height:70px;
+	margin:auto;
+	overflow:hidden;
+}
+.LogoContainer .logo{
+	float:left;
+	padding-top:10px;
+}
+.LogoContainer .logo_menu{
+	float:right;
+	padding-top:5px;
+	height:65px;
+	overflow:hidden;
+	padding-left:12px;
+	background:url(topmbg.gif) left 8px no-repeat;
+}
+.LogoContainer .logo_menu a{
+	display:block;
+	width:82px;
+	text-align:center;
+	padding-top:50px;
+	float:left;
+}
+
+#MainMenu{
+	width:970px;
+	height:33px;	
+	padding-left:10px;
+	overflow:hidden;
+	margin:auto;
+	background:url(menubg.gif) center top no-repeat;
+}
+#MainMenu li{
+	float:left;
+	padding-left:15px;
+	background:url(mspacing.gif) left 14px no-repeat;
+}
+#MainMenu li a{
+	display:block;
+	padding:6px 15px 0 0;
+	line-height:27px;	
+	font-size:14px;
+	font-weight:bold;
+}
+#MainMenu li a:hover{
+	text-decoration:none;
+}
+#MainMenu li.begin,#MainMenu li.next{
+	background:none;
+}
+#MainMenu li.choose{
+	background:url(mchoose.gif) left top no-repeat;
+}
+#MainMenu li.choose a{
+	background:url(mchoose.gif) right top no-repeat;	
+	color:#FFF;
+}
+/*
+* 搜索样式
+*/
+#HeadSearch{
+	width:980px;
+	margin:auto;
+	background:url(searchbg.gif) center top no-repeat;
+	position:relative;
+}
+#HeadSearch .cont1{
+	float:left;
+	width:120px;
+	paddding:7px 10px 0 20px;
+}
+#HeadSearch .cont1 .selectcont{
+	position:absolute;
+	width:85px;
+	left:20px;
+	top:8px;
+	z-index:1000;
+}
+#showselect{
+	height:29px;
+	overflow:hidden;
+	line-height:32px;
+	padding-left:15px;
+	font-size:14px;
+	cursor:pointer;
+}
+#HeadSearch .cont1 .selectcont .unselect{
+	background:url(select.gif) center top no-repeat;
+}
+#HeadSearch .cont1 .selectcont .onclick{
+	background:url(select.gif) center -30px no-repeat;
+}
+#listselect{
+	background:url(select.gif) center bottom no-repeat;
+	padding-bottom:2px;
+}
+#listselect a{
+	display:block;
+	height:29px;
+	overflow:hidden;
+	line-height:32px;
+	padding-left:15px;
+	font-size:14px;
+	background:url(select.gif) center -60px no-repeat;
+}
+#listselect a.ck{
+	background:url(select.gif) center -89px no-repeat;
+	color:red;
+}
+#listselect a:hover{
+	background:url(select.gif) center -119px no-repeat;
+	color:#FFF;
+	text-decoration:none;
+}
+#HeadSearch .keyword{
+	float:left;
+	width:385px;
+	height:38px;
+	padding:8px 5px 0 5px;
+	background:url(keywordinput.gif) left 8px no-repeat;	
+}
+#HeadSearch .keyword input{
+	width:385px;
+	height:29px;
+	line-height:29px;
+	border:0;
+	background:none;	
+}
+#HeadSearch .search_sub{
+	float:left;
+	padding:8px 10px 0 10px;
+}
+#HeadSearch .search_sub input{
+	border:0;
+	width:81px;
+	height:29px;
+	background:url(searchsub.gif) left top no-repeat;
+	text-align:left;
+	padding-left:31px;
+	line-height:32px;
+	font-weight:bold;
+	font-size:14px;
+	color:#FFF;
+	cursor:pointer;
+}
+#HeadSearch .hotsearch{
+	float:left;
+	width:320px;
+	height:46px;
+	overflow:hidden;
+	padding-left:10px;
+	color:#FFF;
+	line-height:45px;
+}
+/*
+* 搜索样式
+
+#HeadSearch{
+	width:980px;
+	margin:auto;
+	background:url(searchbg.gif) center top no-repeat;
+	position:relative;
+}
+#HeadSearch .select{
+	width:85px;
+	padding:7px 10px 0 20px;
+}
+#HeadSearch .select .selectcont{
+	position:absolute;
+	width:85px;
+}
+#showselect{
+	height:29px;
+	overflow:hidden;
+	line-height:32px;
+	padding-left:15px;
+	font-size:14px;
+	cursor:pointer;
+}
+#HeadSearch .select .selectcont .unselect{
+	background:url(select.gif) center top no-repeat;
+}
+#HeadSearch .select .selectcont .onclick{
+	background:url(select.gif) center -30px no-repeat;
+}
+#listselect{
+	background:url(select.gif) center bottom no-repeat;
+	padding-bottom:2px;
+}
+#listselect a{
+	display:block;
+	height:29px;
+	overflow:hidden;
+	line-height:32px;
+	padding-left:15px;
+	font-size:14px;
+	background:url(select.gif) center -60px no-repeat;
+}
+#listselect a.ck{
+	background:url(select.gif) center -89px no-repeat;
+	color:red;
+}
+#listselect a:hover{
+	background:url(select.gif) center -119px no-repeat;
+	color:#FFF;
+	text-decoration:none;
+}
+#HeadSearch .keyword{
+	height:46px;
+	padding:7px 10px 0 5px;
+	background:url(keywordinput.gif) left 7px no-repeat;
+}
+#HeadSearch .keyword input{
+	border:0;
+	width:385px;
+	height:29px;
+	overflow:hidden;	
+	line-height:29px;
+	background:none;
+}
+#HeadSearch .search_sub{
+	width:85px;
+	padding-top:7px;
+}
+#HeadSearch .search_sub input{
+	border:0;
+	width:81px;
+	height:29px;
+	background:url(searchsub.gif) left top no-repeat;
+	text-align:left;
+	padding-left:31px;
+	line-height:32px;
+	font-weight:bold;
+	font-size:14px;
+	color:#FFF;
+	cursor:pointer;
+}
+#HeadSearch .hotsearch{
+	height:46px;
+	width:360px;
+	padding:0 10px 0 10px;
+	color:#FFF;
+	line-height:45px;
+}*/
+/*
+*网页路径样式
+*/
+#nav_guide{
+	height:28px;
+	overflow:hidden;
+	border:1px solid #DCEDF9;
+	margin:0 auto 8px auto;
+	line-height:30px;
+}
+#nav_guide div{
+	float:left;
+}
+#nav_guide .t1{
+	background:url(guide.gif) no-repeat left top;
+	padding-left:10px;
+	color:#FF6A00;
+	width:80px;
+}
+
+/*
+*网页底部
+*/
+#footer{
+	border:1px solid #BED4EA;
+	margin-top:13px;
+	height:90px;
+	background:url(foot_bg.gif) repeat-x bottom;
+	padding-left:300px;
+	font-size:14px;
+	color:#888;
+}
+#selectsearch {
+	padding-top:10px;
+	line-height:40px;
+	word-spacing:10px;
+}
+#selectsearch a{
+	font-size:14px;
+	text-decoration:none;
+	font-weight:bold;
+}
+#footer .choose{
+	color:#952E00;
+}
+#Footsearchinput{
+	height:30px;
+	background:url(bsearch.gif) -1px top no-repeat;
+}
+#Footsearchinput span{
+	display:block;
+	float:left;
+}
+#Footsearchinput span.input input{
+	width:345px;
+	height:25px;
+	line-height:25px;
+	border:0;
+	background:none;
+}
+#Footsearchinput span.submit input{
+	width:85px;
+	height:28px;
+	line-height:28px;
+	border:0;
+	background:none;
+	color:#952E00;
+	font-size:14px;
+	font-weight:bold;
+	cursor:pointer;
+}
+/*
+*copyright
+*/
+#copyright{
+	margin-top:10px;
+	margin-bottom:13px;
+	text-align:center;
+	line-height:20px;
+}
+
+
+/*********************************************************************
+**********************************************************************
+AJAX在线编辑DIV容器
+这个会员看不到.只是版主管理员才可以看到.这是后台风格
+一般不必修改了.修改了会员也看不到
+**********************************************************************
+*********************************************************************/
+#AjaxEditTable{
+	border:1px solid #BEDDFF;
+	background:#FFF;
+}
+#AjaxEditTable .head{
+	height: 21px;
+	background: #DBEAFF;
+	border-bottom:1px solid #BEDDFF;
+	padding:3px 5px 0 7px;
+}
+#AjaxEditTable .head a{
+	color:#FFF;
+}
+#AjaxEditTable .head span{
+	DISPLAY: block; 
+	FLOAT: right;
+}
+#AjaxEditTable .middle{
+	background:#FFF;
+	line-height:18px;
+	padding:5px;
+}
+#AjaxEditTable .middle input,#AjaxEditTable .middle textarea{
+	border:1px solid #BEDDFF;
+	background:#FFF;
+}

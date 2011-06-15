@@ -1,0 +1,191 @@
+<!--
+<?php
+print <<<EOT
+--> 
+<link rel="stylesheet" type="text/css" href="$webdb[www_url]/images/$STYLE/sell/index.css">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer">
+  <tr> 
+    <td>$label[sell_tt1ad]</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr> 
+    <td class="sideL">
+    	<div class="newsell">
+        	<div class="head"><div class="tag">$label[sell_tt1]</div><div class="more">$label[sell_tt2]</div></div>
+            <div class="cont">
+<!--
+EOT;
+$array=list_title('new',8);
+foreach($array AS $rs){
+$rs[title]=get_word($rs[title],30);
+print <<<EOT
+-->
+				<div class="list">
+                	<a href="bencandy.php?fid=$rs[fid]&id=$rs[id]" target="_blank">$rs[title]</a>
+                    <span><em>{$rs[price]}</em>元/{$rs[my_units]}</span>
+                </div>
+<!--
+EOT;
+}print <<<EOT
+-->
+            </div>
+        </div>
+    </td>
+    <td class="sideC">
+    	<div class="slidecont">$label[sell_roll]</div>
+    </td>
+    <td class="sideR">
+    	<div class="postsell">
+        	<div class="head"><a href="$webdb[www_url]/member/?main=$Murl/member/post_choose.php" target="_blank"><span>发布产品信息</span></a></div>
+            <div class="cont">
+            	<div class="mypost"><a href="$webdb[www_url]/member/?main=$Murl/member/list.php" target="_blank">我发布的产品</a></div>
+                <div class="more"><a href="$webdb[www_url]/member/?main=$Murl/member/order.php?job=list" target="_blank">收到的询价单</a> | <a href="$webdb[www_url]/member/?main=$Murl/member/order.php?job=mylist" target="_blank">发出的询价单</a></div>
+            </div>
+        </div>
+        <div class="postbuy">
+        	<div class="head"><a href="$webdb[www_url]/member/?main=$webdb[www_url]/buy/member/post_choose.php" target="_blank"><span>发布求购信息</span></a></div>
+            <div class="cont">
+            	<div class="mypost"><a href="$webdb[www_url]/member/?main=$webdb[www_url]/buy/member/list.php" target="_blank">我发布的求购信息</a></div>
+                <div class="more"><a href="$webdb[www_url]/member/?main=$webdb[www_url]/buy/member/order.php?job=list" target="_blank">收到的报价单</a> | <a href="$webdb[www_url]/member/?main=$webdb[www_url]/buy/member/order.php?job=mylist" target="_blank">发出的报价单</a></div>
+            </div>
+        </div>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr> 
+    <td class="sideL">
+    	<div class="notetitle">$label[sell_tb3]</div>
+    </td>
+    <td class="mainR">
+    	<ul class="gotosell">
+        	$label[blue_sellgotosell]        	
+        </ul>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr> 
+    <td class="mainL">
+    	<div class="sidecont">
+        	<div class="head"><span class="tag">$label[sell_tt4]</span><span class="more">$label[sell_tt5]</span></div>
+            <div class="cont">$label[blue_sellpiclist]</div>
+        </div>
+    </td>
+    <td class="sideR">
+    	<div class="sidecont">
+        	<div class="head"><span class="tag">$label[sell_tt6]</span><span class="more">$label[sell_tt7]</span></div>
+            <div class="cont numlist">$label[blue_sellhotlist]</div>
+        </div>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr> 
+    <td class="mainL">
+    	<div class="all_sort">
+        	<div class="head">
+            	<span class="tag">供应信息分类</span>
+                <span class="more"><a href="$webdb[www_url]/member/?main=$Murl/member/post_choose.php" target="_blank">发布产品</a></span>
+            </div>
+            <div class="cont">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" id="ShowSortTable" onmouseout="HiddenTdBg(this)">
+<!--
+EOT;
+$newarray = array_flip($Fid_db[0]);
+$array = array_chunk($newarray,2);
+$j = 0;
+foreach($array AS $ar){
+$j++;
+$trdisplaybg = $j%2 == 0 ? " class = 'havebg'" : "";
+print <<<EOT
+-->
+                   <tr$trdisplaybg>
+<!--
+EOT;
+$i = 0;
+foreach($ar AS $fup){
+$i++;
+print <<<EOT
+-->
+			  
+                      <td onmouseover="ShowTdBg(this)">				
+				        <div class="big_name"><a href="list.php?fid=$fup">{$Fid_db['name'][$fup]}</a></div>
+				        <div class="smll_name">
+<!--
+EOT;
+$y = 0;
+foreach($Fid_db[$fup] AS $fid=>$name){
+$y++;
+$listnum = $webdb[Index_listsortnum]?$webdb[Index_listsortnum]:20;
+if($y>$listnum)break;
+print <<<EOT
+-->
+				          <a href="list.php?fid=$fid">{$name}</a> | 
+<!--
+EOT;
+}print <<<EOT
+-->
+					      <a href="list.php?fid=$fup" class="more">更多..</a>
+				         </div>
+				      </td>
+<!--
+EOT;
+}if($i<2){
+print <<<EOT
+-->
+				<td onmouseover="ShowTdBg(this)"><br/></td>
+<!--
+EOT;
+}
+print <<<EOT
+-->
+              </tr>
+<!--
+EOT;
+}print <<<EOT
+-->
+            </table>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function ShowTdBg(TheTd){
+	obj=document.getElementById("ShowSortTable").getElementsByTagName("td");
+	for(var i=0;i< obj.length;i++ ){
+		obj[i].className='';
+	}
+	TheTd.className='choose';
+}
+function HiddenTdBg(TheTable){
+	obj=TheTable.getElementsByTagName("td");
+	for(var i=0;i< obj.length;i++ ){
+		obj[i].className='';
+	}
+}
+//-->
+</SCRIPT>
+            </div>
+        </div>
+    </td>
+    <td class="sideR">
+    	<div class="sidecont1">
+        	<div class="head"><span class="tag">$label[sell_newss]</span><span class="more">$label[sell_news2]</span></div>
+            <div class="cont numlist">$label[sell_newss3] </div>
+        </div>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="sidecont1 mt10">
+          <tr>
+        	<td class="head"><span class="tag">$label[sell_v3]</span><span class="more">$label[sell_v4]</span></td>
+          </tr>
+          <tr>
+            <td class="cont">
+            	$label[sell_v5]
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+</table>
+<!--
+EOT;
+?>
+-->

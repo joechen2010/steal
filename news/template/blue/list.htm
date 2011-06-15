@@ -1,0 +1,87 @@
+<!--
+<?php
+if($fidDB[config][ListShowType]!=1&&$fidDB[config][ListShowType]!=3){
+$listdb_pic=Get_Info($type='pic',$webdb[InfolistPicRows]?$webdb[InfolistPicRows]:4,$leng=30,$fid,$mid=0);
+}
+$listdb_pic || $hide_listpic='none';	//不存在图片主题的话.要把图片主题的边框隐藏
+print <<<EOT
+--> 
+<link rel="stylesheet" type="text/css" href="$webdb[www_url]/images/$STYLE/news/list.css">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer">
+  <tr>
+    <td class="main">
+      <div class="dragcont">
+        <div class="head"><span class="tag">$fidDB[name]</span></div>
+        <div class="cont">
+<!--
+EOT;
+foreach($listdb AS $key=>$rs){
+$target=$rs[target]?'_blank':'_self';
+print <<<EOT
+-->
+			<div class="lists"><a href="bencandy.php?fid=$rs[fid]&id=$rs[id]">$rs[title]</a><span>({$rs[posttime]})</span></div>
+<!--
+EOT;
+}
+print <<<EOT
+-->
+			<div class="page">$showpage</div>
+        </div>
+      </div>
+    </td>
+    <td class="side">
+    	<div class="dragcont">
+        	<div class="head"><span class="tag">相关栏目</span></div>
+            <div class="cont">
+<!--
+EOT;
+$array=$listdb_moresort?$Fid_db[$fid]:$Fid_db[$fidDB[fup]];
+foreach($array AS $key=>$value){
+print <<<EOT
+-->
+            	<div class="listsort"><a href="list.php?fid=$key">$value</a></div>
+<!--
+EOT;
+}print <<<EOT
+-->
+            </div>
+        </div>
+        <div class="dragcont mt10">
+        	<div class="head"><span class="tag">热门文章</span></div>
+            <div class="cont">
+<!--
+EOT;
+$array=Get_Info($type='hot',$webdb[InfoJsListRows]>0?$webdb[InfoJsListRows]:8,$webdb[InfoJsListLeng]>0?$webdb[InfoJsListLeng]:36,$fid,$mid=0,1);
+foreach($array AS $rs){
+print <<<EOT
+-->
+            	<div class="title"><a href="bencandy.php?fid=$rs[fid]&id=$rs[id]">$rs[title]</a></div>
+<!--
+EOT;
+}print <<<EOT
+-->
+            </div>
+        </div>
+        <div class="dragcont mt10">
+        	<div class="head"><span class="tag">最新文章</span></div>
+            <div class="cont">
+<!--
+EOT;
+$array=Get_Info($type='new',$webdb[InfoJsListRows]>0?$webdb[InfoJsListRows]:8,$webdb[InfoJsListLeng]>0?$webdb[InfoJsListLeng]:36,$fid,$mid=0,1);
+foreach($array AS $rs){
+print <<<EOT
+-->
+            	<div class="title"><a href="bencandy.php?fid=$rs[fid]&id=$rs[id]">$rs[title]</a></div>
+<!--
+EOT;
+}print <<<EOT
+-->
+            </div>
+        </div>
+    </td>
+  </tr>
+</table>
+<!--
+EOT;
+?>
+-->

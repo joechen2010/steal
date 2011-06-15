@@ -1,0 +1,119 @@
+.MainContainer .MainL{
+	padding-right:10px;
+	width:720px;
+}
+.md10{
+	margin-bottom:10px;
+}
+.brandlist .head{
+	height:33px;
+	background:url(head5.gif) right top no-repeat;
+}
+.brandlist .head .tag{
+	float:left;
+	padding:3px 100px 0 15px;
+	line-height:30px; 
+	background:url(head5.gif) left top no-repeat;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+}
+.brandlist .cont{
+	border:#dfdfdf solid 1px;
+	border-top:0;
+	padding:5px 10px 10px 10px;
+}
+.baseinfo .img{
+	width:200px;
+	padding:10px 20px 10px 10px;
+}
+.baseinfo .img div{
+	text-align:center;
+}
+.baseinfo .img div.pic{
+	border:#DDD solid 1px;
+	padding:2px;
+	margin-bottom:10px;
+}
+.baseinfo .info{
+	padding:5px;
+	line-height:25px;
+	color:#666;
+}
+.baseinfo .info span{
+	font-weight:bold;
+}
+.brandlist .cont .h{
+	height:26px;
+	background:url(head6.gif) left top repeat-x;
+	padding-left:15px;
+}
+.brandlist .cont .h span{
+	display:block;
+	width:90px;
+	background:url(tag.gif) center top no-repeat;
+	padding-top:4px;
+	line-height:22px;
+	text-align:center;
+	font-weight:bold;
+}
+.brandlist .cont .c{
+	padding:5px;
+	line-height:20px;
+}
+.sidecont .head{
+	height:36px;
+	overflow:hidden;
+	line-height:36px;
+	background:url(head4.gif) right top no-repeat;
+}
+.sidecont .head .tag{
+	float:left;
+	padding:0 30px 0 15px;
+	background:url(head4.gif) left top no-repeat;
+	font-size:14px;
+	font-weight:bold;
+}
+.sidecont .cont{
+	border:#BFDBF8 solid 1px;
+	border-top:0;
+	padding:5px 10px 10px 10px;
+}
+.sidecont .cont .list{
+	height:23px;
+	overflow:hidden;
+	line-height:23px;
+	padding-left:15px;
+	background:url(nd0.gif) 5px 9px no-repeat;
+}
+.sidecont .note{
+	text-indent:25px;
+	line-height:20px;
+	color:#666;
+}
+.sidecont .cont .lista{
+	height:23px;
+	overflow:hidden;
+	line-height:23px;
+	padding-left:20px;
+	background:url(array1.gif) 5px 7px no-repeat;
+}
+.sidecont .cont .listb{
+	height:62px;
+	overflow:hidden;
+	border-bottom:#DDD dotted 1px;
+}
+.sidecont .cont .listb a{
+	display:block;
+	float:left;
+}
+.sidecont .cont .listb a.img{
+	width:110px;
+	padding:10px 15px 10px 12px;
+	background:url(picbg.gif) 6px 6px no-repeat;
+}
+.sidecont .cont .listb a.t{
+	padding-top:5px;
+	line-height:20px;
+	font-weight:bold;
+}

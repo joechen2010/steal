@@ -1,0 +1,389 @@
+<!--
+<?php
+print <<<EOT
+--> 
+<link rel="stylesheet" type="text/css" href="$webdb[www_url]/images/$STYLE/main.css">
+<div id="index_top_ad">
+	<div class="ad1">$label[index_ad1]</div>
+    <div class="ad2">$label[index_ad2]</div>
+    <div class="ad3">$label[index_ad3]</div>
+    <div class="ad4">$label[index_ad4]</div>
+    <div class="ad5">$label[index_ad5]</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer">
+  <tr>
+    <td class="sideL">
+    	<div class="NewsSide">
+           <div class="h"><span class="l">行业资讯</span></div>
+           <div class="c">
+                $label[blue_indext1]
+		   </div>
+       </div>
+    </td>
+    <td class="sideC">
+    	<div class="index_silder"> $label[index_rollpic]</div>
+    </td>
+    <td class="sideR">
+    	<div class="Logindiv">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write('<span id="Index_loginer">$Load_Msg</span>');
+document.write('<div style="display:none;"><iframe src="$webdb[www_url]/do/hack.php?hack=login&iframeID=Index_loginer&styletype=blueindex" width=0 height=0></iframe></div>');
+//-->
+</SCRIPT>
+        </div>
+        <table cellspacing="0" cellpadding="0" class="Index_Action mt10">
+         <tr>
+          <td> <a href="$webdb[www_url]/member/?main=$webdb[www_url]/hy/member/post_company.php" class="b" target="_blank">创建商铺</a> 
+            <a href="$webdb[www_url]/member/?main=$webdb[www_url]/sell/member/post_choose.php" target="_blank">发布产品</a> 
+            <a href="$webdb[www_url]/member/?main=$webdb[www_url]/buy/member/post_choose.php" target="_blank">发布求购信息</a> 
+            <a href="$webdb[www_url]/member/?main=$webdb[www_url]/showroom/member/post_a.php" target="_blank">发布展会</a> 
+            <a href="$webdb[www_url]/member/?main=$webdb[www_url]/hr/member/post_choose.php" target="_blank">发布招聘信息</a> 
+            <a href="$webdb[www_url]/member/?main=$webdb[www_url]/brand/member/post_choose.php" target="_blank">登记品牌</a> 
+          </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+</table>
+<div class="wangye">
+<!--
+EOT;
+if($jobs!='show'){$OVERFLOW='hidden';}else{$OVERFLOW='';}print <<<EOT
+-->
+<div id=demo style="OVERFLOW: $OVERFLOW; HEIGHT: 33px; margin-top:6px;margin-bottom:0px;">
+
+<div id=demo1>
+<div style="height:33px;">$label[index_rollad1]</div>
+<div style="height:33px;">$label[index_rollad2]</div>
+</div>
+<div id=demo2></div></div>
+<!--
+EOT;
+if($jobs!='show'){print <<<EOT
+-->
+<script> 
+  var speed  = 1;//滚动速度
+  var rows  = 33;//每行高度
+  var stim  = 100; //停留时间倍数 * speed
+  var stop  = 0; //初始化值，不管
+  var demo2=document.getElementById('demo2');
+  var demo1=document.getElementById('demo1');
+  var demo=document.getElementById('demo');
+  demo2.innerHTML = demo1.innerHTML
+  function Marquee(){
+    if(demo.scrollTop%rows==0 && stop<=stim){
+      stop++;
+      return;
+    }
+    stop = 0;
+    if(demo2.offsetTop-demo.scrollTop<=0)
+      demo.scrollTop-=demo1.offsetHeight
+    else{
+      demo.scrollTop++
+    }
+  }
+  var MyMar    = setInterval(Marquee,speed);
+
+</script>
+<!--
+EOT;
+}print <<<EOT
+--> 
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr> 
+    <td class="mainL">
+    	<table width="100%" cellspacing="0" cellpadding="0" class="ContSideL">
+          <tr>
+            <td class="h"><span class="l">供应信息</span><span class="r">$label[index_more1]</span></td>
+          </tr>
+          <tr>
+            <td class="c">
+				$label[index_2]                
+            </td>
+          </tr>
+        </table>
+        <table width="100%" cellspacing="0" cellpadding="0" class="ContSideL ContSideR">
+          <tr>
+            <td class="h"><span class="l">求购信息</span><span class="r">$label[index_more2]</span></td>
+          </tr>
+          <tr>
+            <td class="c">
+            	$label[index_3]            
+            </td>
+          </tr>
+        </table>
+    </td>
+    <td class="sideR">
+    	<table width="100%" cellspacing="0" cellpadding="0" class="ContSide">
+          <tr>
+            <td class="h">
+            	<span id=Span1 onMouseOver=ShowTab(1,1,3)>推荐企业</span>
+                <span id=Span2 onMouseOver=ShowTab(2,1,3)>最新加入企业</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="c">
+            	<div id=Tab1>$label[index_L_1]</div>
+                <div id=Tab2>$label[index_L_2]</div>
+            </td>
+          </tr>
+        </table>
+        <SCRIPT LANGUAGE="JavaScript">ShowTab(1,1,3);</SCRIPT>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr> 
+    <td class="mainL">
+    	<table width="100%" cellspacing="0" cellpadding="0" class="PicCont">
+          <tr>            
+            <td class="h">
+             <span class="tag">&nbsp;</span> 
+             <span id=Span3 onMouseOver=ShowTab(3,3,5)>推荐产品</span> 
+             <span id=Span4 onMouseOver=ShowTab(4,3,5)>热门产品</span> 
+             <span class="r">$label[index_more3]</span> 
+            </td>
+          </tr>
+          <tr id="Tab3">
+            <td class="c">
+            	$label[blue_indext2]               
+            </td>
+          </tr>
+          <tr id="Tab4">
+            <td class="c">
+            	$label[blue_indext3]              
+            </td>
+          </tr>
+        </table>
+        <SCRIPT LANGUAGE="JavaScript">ShowTab(3,3,5);</SCRIPT>
+    </td>
+    <td class="sideR">
+    	<table width="100%" cellspacing="0" cellpadding="0" class="ContSide">
+          <tr>
+            
+          <td class="h"><span class="tag">推荐展览馆</span><span class="more">$label[index_more4]</span></td>
+          </tr>
+          <tr>
+            <td class="c">
+            	$label[index_L_3]			   
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr> 
+    <td class="mainL">
+    	<table width="100%" cellspacing="0" cellpadding="0" class="Index_Sort">
+          <tr>            
+            <td class="h"> 
+              <div id=Span6 onMouseOver="ShowTab(6,6,9);showfidtype('sell');">产品供应分类</div>
+              <div id=Span7 onMouseOver="ShowTab(7,6,9);showfidtype('buy');">求购信息分类</div>
+              <div id=Span8 onMouseOver="ShowTab(8,6,9);showfidtype('hy');">企业商铺分类</div> 
+              <div class="more">$label[index_more8]</div> 
+            </td>
+          </tr>
+          <tr id=Tab6>
+            <td class="sortcont">
+            	<div id="sell_content"></div>
+            </td>
+          </tr>
+          <tr id=Tab7>
+            <td class="sortcont">
+                <div id="buy_content"></div>
+            </td>
+          </tr>
+          <tr id=Tab8>
+            <td class="sortcont">
+                <div id="hy_content"></div>
+            </td>
+          </tr>
+        </table>
+<script type="text/javascript">
+<!--
+function showfidtype(type){
+	if (type=='sell')
+	{
+		AJAX.get("sell_content","$webdb[www_url]/sell/job.php?job=showfid",1);
+	}
+	else if (type=='buy')
+	{
+		AJAX.get("buy_content","$webdb[www_url]/buy/job.php?job=showfid",1);
+	}
+	else if (type=='hy')
+	{
+		AJAX.get("hy_content","$webdb[www_url]/hy/job.php?job=showfid",1);
+	}
+}
+function ShowTdBg(TheTd){
+	obj=document.getElementById("ShowSortTable").getElementsByTagName("td");
+	for(var i=0;i< obj.length;i++ ){
+		obj[i].className='';
+	}
+	TheTd.className='ck';
+}
+function HiddenTdBg(TheTable){
+	obj=TheTable.getElementsByTagName("td");
+	for(var i=0;i< obj.length;i++ ){
+		obj[i].className='';
+	}
+}
+showfidtype('sell');
+ShowTab(6,6,9);
+//-->
+</script>
+    </td>
+    <td class="sideR">
+    	<table width="100%" cellspacing="0" cellpadding="0" class="ContSide_2">
+          <tr>            
+            <td class="h"><span class="l">品牌展示</span><span class="r">$label[index_more5]</span></td>
+          </tr>
+          <tr>
+            <td class="c">               
+			   $label[index_L_6]
+            </td>
+          </tr>
+        </table>
+        <table width="100%" cellspacing="0" cellpadding="0" class="ContSide_2 mt10">
+          <tr>
+           <td class="h"><span class="l">行业展会</span><span class="r">$label[index_more6]</span></td>
+          </tr>
+          <tr>
+            <td class="c">
+              $label[index_L_5]                
+              $label[index_L_4]
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr> 
+    <td>
+    	$label[index_bannerad]
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr> 
+    <td class="mainL">
+    	<table width="100%" cellspacing="0" cellpadding="0" class="ContSide_2">
+          <tr>            
+            <td class="h"> 
+               <span class="l">$label[index_p3]</span> 
+               <span class="m">$label[index_t1]</span> 
+               <span class="r">$label[index_more7]</span> 
+            </td>
+          </tr>
+          <tr>
+            <td class="c">
+                <div class="Mlistp_w">$label[index_r1]</div>
+				$label[index_r2]
+            </td>
+          </tr>
+        </table>
+    </td>
+    <td class="sideR">
+    	<table width="100%" cellspacing="0" cellpadding="0" class="ContSide_2">
+          <tr>
+            <td class="h"><span class="l">$label[index_p1]</span><span class="r">$label[index_more9]</span></td>
+          </tr>
+          <tr>
+            <td class="c">
+            	$label[index_b1]
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+</table><table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr>
+    <td>$label[index_b1ad]</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr> 
+    <td class="mainL">    	
+    	<table width="100%" cellspacing="0" cellpadding="0" class="ContSide_2">
+          <tr>
+            <td class="h"> 
+              <span class="l">$label[index_p2]</span> 
+              <span class="m">$label[index_t2]</span> 
+              <span class="r">$label[index_more10]</span> 
+          </td>
+          </tr>
+          <tr>
+            <td class="c">
+                <div class="listitles">
+                	$label[index_r4]
+                </div>
+                <div class="listpics">
+                	$label[index_r3]
+                </div>
+            </td>
+          </tr>
+        </table>        
+    </td>
+    <td class="sideR">
+    	<table width="100%" cellspacing="0" cellpadding="0" class="ContSide_2">
+          <tr>
+            <td class="h">
+            	<span id=Span9 onMouseOver=ShowTab(9,9,11)>企业招聘</span>
+                <span id=Span10 onMouseOver=ShowTab(10,9,11)>个人求职</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="c">
+            	<div id="Tab9"> $label[index_L_7] </div>
+                <div id="Tab10">$label[index_L_8]</div>
+            </td>
+          </tr>
+        </table>
+        <SCRIPT LANGUAGE="JavaScript">ShowTab(9,9,11);</SCRIPT>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10 ContSide_2">
+  <tr> 
+    <td class="h">
+    	<span class="l">友情链接</span> 
+        <span class="r"><a href="$webdb[www_url]/do/friendlink.php?job=apply" target="_blank">申请链接</a> 
+            | <a href="$webdb[www_url]/do/friendlink.php" target="_blank">更多..</a></span>
+    </td>    
+  </tr>
+  <tr> 
+    <td class="c">
+		<div class="piclink">
+<!--
+EOT;
+foreach($friendlinkDB[1] AS $rs){print <<<EOT
+-->
+		<a href="$rs[url]" title="$rs[name] $rs[descrip]" target="_blank"><img src="$rs[logo]" onerror="this.src='$webdb[www_url]/images/default/nopic.jpg'" width="88" height="31"/></a>
+<!--
+EOT;
+}print <<<EOT
+-->
+        </div>
+        <div class="wordlink">
+<!--
+EOT;
+foreach($friendlinkDB[0] AS $rs){print <<<EOT
+-->
+		
+        	<a href="$rs[url]" title="$rs[descrip]" target="_blank">$rs[name]</a>
+<!--
+EOT;
+}print <<<EOT
+-->
+        </div>
+    </td>    
+  </tr>
+</table>
+<!--
+EOT;
+?>
+-->

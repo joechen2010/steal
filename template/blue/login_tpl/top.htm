@@ -1,0 +1,42 @@
+<!--
+<?php
+if($lfjid){
+$lfjdb[regdate] = date("Y-m-d",$lfjdb[regdate]);
+$lfjdb[moneya]=get_money($lfjdb[uid]);
+print <<<EOT
+-->
+<div>欢迎你回来:<span>$lfjid</span></div>
+<div>$MSG</div>
+<div><a href="$webdb[www_url]/member/homepage.php?uid=$lfjuid" target="_blank">个人信息</a></div>
+<div><a href="$webdb[www_url]/member/" target="_blank">会员中心</a></div>
+<div><a href="$webdb[www_url]/member/index.php?main=userinfo.php?job=edit" target="_blank">修改资料</a></div>
+<div><a href="$webdb[www_url]/do/login.php?action=quit">安全退出</a></div>
+<!--
+EOT;
+}else{print <<<EOT
+-->
+<form name="top_login" method="post" action="$webdb[www_url]/do/login.php">
+<div>通行证 | 帐号：</div>
+<div><input type="text" name="username" class="login_input"></div>
+<div>密码：</div>
+<div><input type="password" name="password" class="login_input"></div>
+<div><input type="submit" name="Submit" value="登录" class="login_sub"></div>
+<div>
+	<a href="$webdb[www_url]/do/reg.php">注册</a> | <a href="$webdb[www_url]/do/login.php">登录</a>
+	<!--
+EOT;
+if($webdb[QQ_login]){print <<<EOT
+-->
+<A HREF="$webdb[www_url]/do/qq_login.php" target="_blank"><img style="margin-top:4px;" border=0 id="qqlogin"  src="$webdb[www_url]/images/default/qq_login_small.png"></A>
+<!--
+EOT;
+}print <<<EOT
+-->
+    <input type="hidden" name="step" value="2">
+    <input class="radio" type="hidden" name="cookietime" value="86400" > 
+</div>
+</form>
+<!--
+EOT;
+}?>
+-->

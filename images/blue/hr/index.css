@@ -1,0 +1,373 @@
+.MainContainer .mainadr{
+	width:50%;
+	text-align:right;
+}
+/*
+*ÄÚÈÝÀ¸
+*/
+.MainContainer .mainR{
+	width:720px;
+	padding-left:10px;
+}
+.hrsort .head{
+	height:35px;
+	overflow:hidden;
+	line-height:40px;
+	padding-left:10px;
+	background:url(head1.gif) left top no-repeat;
+}
+.hrsort .head .tag{
+	display:block;
+	padding-right:10px;
+	text-align:center;
+	font-size:16px;
+	font-family:ºÚÌå;
+	color:#FFF;
+	background:url(head1.gif) right top no-repeat;
+}
+.hrsort .cont{
+	border:#DCDCDC solid 1px;
+	padding:10px 5px 10px 5px;
+}
+.hrsort .cont .big{
+	height:25px;
+	line-height:25px;
+	padding-top:5px;
+	background:url(bigsort.gif) 5px 7px no-repeat;
+	padding-left:35px;
+	font-weight:bold;
+}
+.hrsort .cont .small{
+	line-height:20px;
+	padding:5px 5px 0 35px;
+}
+.hotjob .head{
+	position:relative;
+	height:33px;
+	background:url(head2.gif) right top no-repeat;
+}
+.hotjob .head .tag{
+	width:100px;
+	position:absolute;
+	background:url(head2.gif) left top no-repeat;
+	line-height:40px;
+	padding-left:35px;
+	margin-left:-2px;
+	font-size:14px;
+	font-weight:bold;
+}
+.hotjob .cont{
+	border:#DCDCDC solid 1px;
+	padding:10px;
+	line-height:23px;
+	color:#2575B8;
+}
+.hotjob .cont a{
+	color:#2575B8;
+}
+.howhavejob{
+	border:#dcdcdc solid 1px;
+}
+.howhavejob .head{
+	height:32px;
+	line-height:32px;
+	background:url(head3.gif) left top repeat-x;
+	padding-left:15px;
+	font-size:14px;
+	font-weight:bold;
+}
+.howhavejob .cont{
+	padding:10px;
+	line-height:23px;
+}
+/*
+*
+*/
+.showjobhr{
+	width:420px;
+	float:left;
+}
+.showjobhr .head{
+	height:35px;
+	line-height:35px;
+	background:url(head4.gif) left top repeat-x;
+}
+.showjobhr .head span{
+	display:block;
+	width:207px;
+	text-align:center;
+	float:left;
+	font-size:14px;
+	background:url(out1.gif) center top no-repeat;
+	cursor:pointer;
+}
+#Span2{
+	float:right;
+}
+.showjobhr .head span.choose{
+	background:url(over1.gif) center top no-repeat;
+	font-weight:bold;
+}
+.showjobhr .cont{
+	border:#DCDCDC solid 1px;
+	border-top:0;
+	padding:10px;
+	line-height:22px;
+}
+.showjobhr .cont .list{
+	height:22px;
+	overflow:hidden;
+}
+.showjobhr .cont .list span{
+	display:block;
+	float:left;
+}
+.showjobhr .cont .list span.t1{
+	width:150px;
+	padding-left:5px;
+}
+.showjobhr .cont .list span.t1 a,.showjobhr .cont .list span.a1 a{
+	color:#2575B8;
+}
+.showjobhr .cont .list span.t2{
+	width:60px;
+}
+.showjobhr .cont .list span.t3{
+	width:180px;
+}
+.showjobhr .cont .list span.a1{
+	width:100px;
+	padding-left:5px;
+}
+.showjobhr .cont .list span.a2{
+	width:140px;
+}
+.showjobhr .cont .list span.a3{
+	width:75px;
+}
+.showjobhr .cont .list span.a4{
+	width:75px;
+}
+/*
+*
+*/
+.showaction{
+	width:290px;
+	float:right;
+}
+.showaction .head{
+	height:35px;
+	line-height:35px;
+	background:url(head5.gif) left -1px repeat-x;
+}
+.showaction .head span{
+	display:block;
+	width:141px;
+	text-align:center;
+	float:left;
+	font-size:14px;
+	background:url(out2.gif) center top no-repeat;
+	cursor:pointer;
+}
+#Span4{
+	float:right;
+}
+.showaction .head span.choose{
+	background:url(over2.gif) center top no-repeat;
+	font-weight:bold;
+}
+.showaction .cont{
+	border:#F3D37B solid 1px;
+	border-top:0;
+	padding-top:10px;
+	height:120px;
+	background:#FFF8E5;
+}
+.showaction .cont div{
+	width:143px;
+	height:50px;
+	background:url(butter.gif) 20px 10px no-repeat;
+	float:left;
+}
+.showaction .cont div a{
+	display:block;
+	height:30px;
+	padding:12px 0 0 45px;
+	line-height:30px;
+	color:#604600;
+}
+.showaction .cont div a:hover{
+	text-decoration:none;
+}
+/*
+*
+*/
+.cleardiv{
+	clear:both;
+}
+.hrsearch{
+	height:63px;
+	background:url(searchbg.gif) left top no-repeat;
+}
+.hrsearch .title{
+	width:235px;
+	height:63px;
+	float:left;
+}
+.hrsearch .title span{
+	display:none;
+}
+.hrsearch .type{
+	width:75px;
+	height:40px;
+	padding-top:10px;
+	float:left;
+}
+.hrsearch .type span{
+	display:block;
+	height:20px;
+	line-height:20px;
+}
+.hrsearch .type span input{
+	border:0;
+	vertical-align:middle;
+}
+.hrsearch .keyword{
+	width:270px;
+	height:40px;
+	padding:10px 0 0 20px;
+	float:left;
+}
+.hrsearch .keyword span{
+	display:block;
+	height:20px;
+	line-height:20px;
+}
+.hrsearch .keyword span input{
+	border:#85B2CC solid 1px;
+	width:210px;
+	height:15px;
+}
+.hrsearch .subinput{
+	float:left;
+	padding-top:10px;
+	padding-left:5px;
+}
+.dragcity,.newjob,.newhr{
+	border:#BECED8 solid 1px;
+}
+.dragcity .head,.newjob .head,.newhr .head{
+	height:32px;
+	background:url(head6.gif) left top repeat-x;
+	position:relative;
+}
+.dragcity .head .tag{
+	padding:2px 15px 0 20px;
+	line-height:30px;
+	background:url(tag1.gif) right 15px no-repeat;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+}
+.newjob .head .tag,.newhr .head .tag{
+	position:absolute;
+	width:94px;
+	height:34px;
+	background:url(tag2.gif) left top no-repeat;
+	left:15px;
+	top:-1px;
+	text-align:center;
+	line-height:38px;
+	font-size:14px;
+	font-weight:bold;
+}
+.dragcity .cont{
+	padding:10px;
+}
+.dragcity .cont .city_hr,.dragcity .cont .city_hr td{
+	border-collapse:collapse;
+	border:#DDD solid 1px;
+}
+.dragcity .cont .city_hr td{
+	text-align:center;
+	background:url(tdbg.gif) left top no-repeat;
+}
+.dragcity .cont .city_hr td a{
+	display:block;
+	height:25px;
+	line-height:25px;
+	overflow:hidden;
+}
+.newjob .cont,.newhr .cont{
+	padding:10px;
+}
+.list_zh td{
+	height:25px;
+	vertical-align:middle;
+	text-align:center;
+}
+.list_zh td.td1{
+	width:35%;
+	text-align:left;
+}
+.list_zh .hh td.td1{
+	padding-left:15px;
+}
+.list_zh td.td1 a{
+	display:block;
+	padding-left:15px;
+	line-height:25px;
+	background:url(array.gif) 6px 9px no-repeat;
+	font-weight:bold;
+}
+.list_zh td.td2{
+	width:40%;
+	text-align:left;
+}
+.list_zh td.td3{
+	width:10%;
+}
+.list_zh td.td4{
+	width:15%;
+}
+.list_zh .hh td{
+	border-bottom:#DDD dotted 1px;
+	font-weight:bold;
+	color:#2474B7;
+}
+.list_zh .bb td{
+	background:#FAFAFA;
+}
+.list_zh td.tda,.list_zh td.tdb,.list_zh td.tdc{
+	width:20%;
+}
+.list_zh td.tdd{
+	width:15%;
+}
+.list_zh td.tde{
+	width:25%;
+}
+.list_zh .hh td.tda {
+	text-align:left;
+	padding-left:15px;	
+}
+.list_zh td.tda a{
+	display:block;
+	line-height:25px;
+	text-align:left;
+	padding-left:15px;
+	font-weight:bold;
+	background:url(array.gif) 6px 9px no-repeat;
+}
+.newhr .list_zh .hh td{
+	color:#E14F00;
+}
+.newhr{
+	border:#F3D37B solid 1px;
+}
+.newhr .head{
+	background:url(head7.gif) left top repeat-x;
+}
+.newhr .head .tag{
+	background:url(tag3.gif) left top no-repeat;
+}

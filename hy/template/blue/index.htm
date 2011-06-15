@@ -1,0 +1,169 @@
+<!--
+<?php
+print <<<EOT
+--> 
+<link rel="stylesheet" type="text/css" href="$webdb[www_url]/images/$STYLE/hy/index.css">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer">
+  <tr>
+    <td>$label[hy_tt1ad]</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr>
+    <td class="sideL">
+    	<div class="joinhy">
+        	<div class="head"><span class="tag">企业商铺</span><span class="more">$label[hy_tb1]</span></div>
+            <div class="cont">
+            	<div class="why">$label[blue_whyjoinhy]</div>
+                <div class="how">$label[blue_howjoinhy]</div>
+                <div class="at">
+                    <a href="$webdb[www_url]/member/?main=$Murl/member/post_company.php" target="_blank"><img src="$webdb[www_url]/images/$STYLE/hy/opensp.gif"/></a>
+                    <a href="$webdb[www_url]/member/?main=$Murl/member/homepage_ctrl.php?atn=base" target="_blank"><img src="$webdb[www_url]/images/$STYLE/hy/glsp.gif"/></a>
+                </div>
+            </div>
+        </div>
+    </td>
+    <td class="sideC">
+    	<div class="hyslide">$label[hy_rollpic]</div>
+    </td>
+    <td class="sideR">
+    	<div class="tzhycont">
+        	<div class="head"><span class="tag">$label[hy_j2]</span><span class="more">$label[hy_j1]</span></div>
+            <div class="cont">
+            	$label[hy_a1]
+            </div>
+        </div>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr>
+    <td class="sideL">
+    	<div class="sidecont">
+        	<div class="head"><span class="tag">$label[hy_j3]</span><span class="more">$label[hy_j4]</span></div>
+            <div class="cont">
+            	$label[hy_a2]
+            </div>
+        </div>
+    </td>
+    <td class="mainR">
+    	<div class="sidecont">
+        	<div class="head"><span class="tag">$label[hy_j5]</span><span class="more">$label[hy_j6]</span></div>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="comanycont">
+              <tr>
+                <td class="title">                	
+                  $label[hy_a3]                    
+                </td>
+                <td class="pic">$label[hy_j8]</td>
+              </tr>
+            </table>
+        </div>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer mt10">
+  <tr>
+    <td class="sideL">
+    	<div class="sidecont1">
+        	<div class="head"><span class="tag">$label[hy_j9]</span><span class="more">$label[hy_j10]</span></div>
+            <div class="cont numlist1">
+            	$label[hy_a5]
+            </div>
+        </div>
+        <div class="sidecont1 mt10">
+        	<div class="head"><span class="tag">$label[hy_d2]</span><span class="more">$label[hy_d3]</span></div>
+            <div class="cont numlist2">
+            	$label[hy_d1]
+            </div>
+        </div>
+    </td>
+    <td class="mainR">
+    	<div class="sortcont">
+        	<div class="head">
+            	<span class="tag">公司分类</span>
+                <span class="more"><a href="$webdb[www_url]/member/?main=$Murl/member/post_company.php" target="_blank">登记企业</a></span>
+            </div>
+            <div class="cont">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" id="ShowSortTable" onmouseout="HiddenTdBg(this)">
+<!--
+EOT;
+$newarray = array_flip($Fid_db[0]);
+$array = array_chunk($newarray,2);
+$j = 0;
+foreach($array AS $ar){
+$j++;
+$trdisplaybg = $j%2 == 0 ? "class = 'havebg'" : "";
+print <<<EOT
+-->
+              <tr $trdisplaybg>
+<!--
+EOT;
+$i = 0;
+foreach($ar AS $fup){
+$i++;
+print <<<EOT
+-->
+			  
+                <td onmouseover="ShowTdBg(this)">				
+				<div class="big_name"><a href="list.php?fid=$fup">{$Fid_db['name'][$fup]}</a></div>
+				<div class="smll_name">
+<!--
+EOT;
+$y = 0;
+foreach($Fid_db[$fup] AS $fid=>$name){
+$y++;
+$listnum = $webdb[Index_listsortnum]?$webdb[Index_listsortnum]:20;
+if($y>$listnum)break;
+print <<<EOT
+-->
+				<a href="list.php?fid=$fid">{$name}</a> | 
+<!--
+EOT;
+}print <<<EOT
+-->
+					<a href="list.php?fid=$fup" class="more">更多..</a>
+				</div>
+				</td>
+<!--
+EOT;
+}if($i<2){
+print <<<EOT
+-->
+				<td onmouseover="ShowTdBg(this)"><br/></td>
+<!--
+EOT;
+}
+print <<<EOT
+-->
+              </tr>
+<!--
+EOT;
+}print <<<EOT
+-->
+            </table>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function ShowTdBg(TheTd){
+	obj=document.getElementById("ShowSortTable").getElementsByTagName("td");
+	for(var i=0;i< obj.length;i++ ){
+		obj[i].className='';
+	}
+	TheTd.className='choose';
+}
+function HiddenTdBg(TheTable){
+	obj=TheTable.getElementsByTagName("td");
+	for(var i=0;i< obj.length;i++ ){
+		obj[i].className='';
+	}
+}
+//-->
+</SCRIPT>
+            </div>
+        </div>
+    </td>
+  </tr>
+</table>
+<!--
+EOT;
+?>
+-->

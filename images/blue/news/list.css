@@ -1,0 +1,88 @@
+.MainContainer .side{
+	width:250px;
+	padding-left:10px;
+}
+.dragcont .head{
+	height:30px;
+	overflow:hidden;
+	background:url(head6.gif) right top no-repeat;
+	line-height:35px;
+}
+.dragcont .head .tag{
+	background:url(head6.gif) left top no-repeat;
+	float:left;
+	padding-left:30px;
+	font-size:14px;
+	font-weight:bold;	
+}
+.dragcont .head .more{
+	float:right;
+	padding-right:10px;	
+}
+.dragcont .cont{
+	border:#D0D0D0 solid 1px;
+	border-top:0;
+	padding:10px;
+	line-height:23px;
+}
+.showsorts .tdL{
+	padding:0 5px 10px 0;
+}
+.showsorts .tdR{
+	padding:0 0 10px 5px;
+}
+.showsorts .dragcont .cont{
+	height:230px;
+	overflow:hidden;
+}
+.dragcont .cont .list{
+	height:22px;
+	overflow:hidden;
+	padding-left:15px;
+	border-bottom:#ddd dotted 1px;
+	background:url(icon2.gif) 5px 9px no-repeat;
+}
+.dragcont .cont .list a{
+	float:left;
+}
+.dragcont .cont .list span{
+	float:right;
+	color:#888;
+}
+.dragcont .cont .listsort{
+	height:30px;
+	line-height:30px;
+	padding-left:25px;
+	font-weight:bold;
+	background:url(pointer.gif) 5px 10px no-repeat;
+}
+.dragcont .cont .title{
+	height:23px;
+	overflow:hidden;
+	padding-left:15px;
+	background:url(nd0.gif) 5px 10px no-repeat;
+}
+.dragcont .cont .lists{
+	height:35px;
+	line-height:35px;
+	overflow:hidden;
+	padding-left:15px;
+	border-bottom:#ddd dotted 1px;
+	background:url(icon2.gif) 5px 15px no-repeat;
+}
+.dragcont .cont .lists a{
+	float:left;
+}
+.dragcont .cont .lists span{
+	float:right;
+	color:#888;
+}
+.dragcont .cont .page{
+	line-height:30px;
+	text-align:center;
+	padding-top:5px;
+}
+.dragcont .cont .page a{
+	border:#DDD solid 1px;
+	padding:3px 5px 2px 5px;	
+}

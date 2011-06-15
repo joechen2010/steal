@@ -1,0 +1,192 @@
+<!--
+<?php
+$rsdb[iframeurl]?$isiframe[1]=" checked ":$isiframe[0]=" checked ";
+if(!$nextdb[id]){$nextdb[links]=" onclick='return false;' ";$nextdb[subject]="没有了";}
+if(!$backdb[id]){$backdb[links]=" onclick='return false;' ";$backdb[subject]="没有了";}
+print <<<EOT
+-->
+<link rel="stylesheet" type="text/css" href="$webdb[www_url]/images/$STYLE/news/bencandy.css">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="MainContainer">
+  <tr>
+    <td class="main">
+    	<div class="dragcont">
+            <div class="head"><span class="tag">TOP</span></div>
+            <div class="cont">
+<!--
+EOT;
+if($lfjuid){
+print <<<EOT
+-->
+            	<div class="action">
+                  <a href="$webdb[www_url]/member/?main=$Murl/member/post.php?fid=$fid">投稿</a> 
+<!--
+EOT;
+if(($lfjuid&&$lfjuid==$rsdb[uid])||$web_admin){
+print <<<EOT
+-->
+                   <a href="$webdb[www_url]/member/?main=$Murl/member/post.php?job=edit&fid=$fid&id=$id&rid=$rid">修改</a>
+                   <a href="$webdb[www_url]/member/?main=$Murl/member/post.php?action=del&fid=$fid&id=$id&rid=$rsdb[rid]">删除</a> 
+<!--
+EOT;
+}print <<<EOT
+-->
+                </div>
+<!--
+EOT;
+}print <<<EOT
+-->
+				<div class="title">$rsdb[title]</div>
+                <div class="info">[ 编辑:{$rsdb[username]} |&nbsp;时间:{$rsdb[posttime]} 
+                  | 浏览:<font id="hits">{$rsdb[hits]}</font>次 | 来源:<a href="$rsdb[copyfromurl]" target="_blank">{$rsdb[copyfrom]}</a>  | 作者:{$rsdb[author]} ]
+                </div>
+                <div class="conttent"><font id="zoom" face="宋体"><span id="post1">$rsdb[content]</span></font></div>
+<!--
+EOT;
+if($showpage){print <<<EOT
+-->
+                <div class="page">$showpage</div>
+<!--
+EOT;
+}print <<<EOT
+-->
+				<div class="moreaction">
+<SCRIPT LANGUAGE="JavaScript" src="$webdb[www_url]/images/default/bencandy.js"></SCRIPT><input type=hidden value=1 name="h1" id="h1">
+					【<a href="javascript:doZoom(18)">大</a> <a href="javascript:doZoom(14)">中</a> <a href="javascript:doZoom(12)">小</a>】
+                    【<a href="javascript:doPrint()">打印</a>】【<a href="javascript:ft(1)" id="Maiweb1">繁体</a>】
+                    【<a href="$webdb[www_url]/member/?main=$Murl/member/post.php?fid=$fid" target=_blank>投稿</a>】 
+                    【<a href="javascript:window.close()">关闭</a>】【<a href="$Mdomain/comment.php?fid=$fid&id=$id" target=_blank>评论</a>】 
+                    【<a href="javascript:window.close()"></a><a href="#">返回顶部</a>】
+                </div>
+                <div class="updown">
+                	<div class="left">[<a href="bencandy.php?fid=$backdb[fid]&id=$backdb[id]" $backdb[links]>上一篇</a>]<a $backdb[links] href="bencandy.php?fid=$backdb[fid]&id=$backdb[id]" title="$backdb[title]">$backdb[subject]</a></div>
+                    <div class="right">[<a href="bencandy.php?fid=$nextdb[fid]&id=$nextdb[id]" $nextdb[links]>下一篇</a>]<a $nextdb[links] href="bencandy.php?fid=$nextdb[fid]&id=$nextdb[id]" title="$nextdb[title]">$nextdb[subject]</a></div>
+                </div>
+            </div>
+        </div>
+<!--
+EOT;
+if( $fidDB[allowcomment] ){
+print <<<EOT
+-->
+		<div class="dragcont mt10" id="commentTable">
+            <div class="head"><span class="tag">评论</span></div>
+            <div class="cont">
+            	<div id="comment"></div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="tdl">称呼:</td>
+                    <td class="tdr"><input type="text" name="textfield2" id="comment_username" value="$lfjid"></td>
+                  </tr>
+<!--
+EOT;
+if(!$web_admin){
+print <<<EOT
+-->
+                  <tr>
+                    <td class="tdl">验证码:</td>
+                    <td class="tdr">
+                    	<input id="yzImgNum" type="text" name="yzimg" size="8">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write('<img border="0" name="imageField" onclick="this.src=this.src+Math.random();" src="$webdb[www_url]/do/yzimg.php?'+Math.random()+'">');
+//-->
+</SCRIPT>
+                    </td>
+                  </tr>
+<!--
+EOT;
+}
+print <<<EOT
+-->
+				  <tr>
+                    <td class="tdl">内容:</td>
+                    <td class="tdr"><textarea name="textfield" cols="50" rows="5" id="comment_content" onKeyDown="quickpost(event)"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td class="tdl"><br/>
+<script language="JavaScript">
+<!--
+getcomment("{$Mdomain}/comment_ajax.php?fid=$fid&id=$id");
+cnt = 0;
+function quickpost(event)
+{
+	if((event.ctrlKey && event.keyCode == 13)||(event.altKey && event.keyCode == 83))
+	{
+		cnt++;
+		if (cnt==1){
+			postcomment('{$Mdomain}/comment_ajax.php?action=post&fid=$fid&id=$id')
+		}else{
+			alert('内容正在提交...');
+		}
+	}	
+}
+//-->
+</script>
+                    </td>
+                    <td class="tdr"><input type="button" id="comment_submit" name="Submit" value="提交" onClick="postcomment('{$Mdomain}/comment_ajax.php?action=post&fid=$fid&id=$id','$webdb[yzImgComment]')"></td>
+                  </tr>
+                </table>
+
+            </div>
+        </div>	
+<!--
+EOT;
+}
+print <<<EOT
+-->
+    </td>
+    <td class="side">
+    	<div class="dragcont">
+        	<div class="head"><span class="tag">相关栏目</span></div>
+            <div class="cont">
+<!--
+EOT;
+foreach($Fid_db[$fidDB[fup]] AS $key=>$value){
+print <<<EOT
+-->
+            	<div class="listsort"><a href="list.php?fid=$key">$value</a></div>
+<!--
+EOT;
+}print <<<EOT
+-->
+            </div>
+        </div>
+        <div class="dragcont mt10">
+        	<div class="head"><span class="tag">热门文章</span></div>
+            <div class="cont">
+<!--
+EOT;
+$array=Get_Info($type='hot',$webdb[InfoJsListRows]>0?$webdb[InfoJsListRows]:8,$webdb[InfoJsListLeng]>0?$webdb[InfoJsListLeng]:36,$fid,$mid=0);
+foreach($array AS $rs){
+print <<<EOT
+-->
+            	<div class="list"><a href="bencandy.php?fid=$rs[fid]&id=$rs[id]">$rs[title]</a></div>
+<!--
+EOT;
+}print <<<EOT
+-->
+            </div>
+        </div>
+        <div class="dragcont mt10">
+        	<div class="head"><span class="tag">最新文章</span></div>
+            <div class="cont">
+<!--
+EOT;
+$array=Get_Info($type='new',$webdb[InfoJsListRows]>0?$webdb[InfoJsListRows]:8,$webdb[InfoJsListLeng]>0?$webdb[InfoJsListLeng]:36,$fid,$mid=0,1);
+foreach($array AS $rs){
+print <<<EOT
+-->
+            	<div class="list"><a href="bencandy.php?fid=$rs[fid]&id=$rs[id]">$rs[title]</a></div>
+<!--
+EOT;
+}print <<<EOT
+-->
+            </div>
+        </div>
+    </td>
+  </tr>
+</table>
+<!--
+EOT;
+?>
+-->

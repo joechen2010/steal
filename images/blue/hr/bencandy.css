@@ -1,0 +1,140 @@
+.MainContainer .side{
+	width:250px;
+	padding-right:10px;
+}
+.sortcont .head{
+	height:35px;
+	line-height:35px;
+	background:url(head1.gif) right top no-repeat;
+	padding-right:10px;
+}
+.sortcont .head .tag{
+	background:url(head1.gif) left top no-repeat;
+	padding-left:10px;
+	font-weight:bold;
+	font-size:16px;
+	color:#FFF;
+}
+.sortcont .cont{
+	border:#DDD solid 1px;
+	border-top:0;
+	padding:10px 0 10px 0;
+}
+.sortcont .cont .company .img{
+	width:60px;
+	padding:10px;
+}
+.sortcont .cont .company .t{
+	font-size:14px;
+	font-weight:bold;
+	padding:5px 15px 5px 0;
+	line-height:20px;
+}
+.sortcont .cont .yz{
+	text-align:center;
+	line-height:20px;
+}
+.sortcont .cont .yz a{
+	font-weight:bold;
+	color:#FF6400;
+}
+.sortcont .cont .view_company{
+	text-align:center;
+	padding:10px;
+}
+.otherjob .head{
+	height:34px;
+	background:url(head8.gif) right top no-repeat;
+	position:relative;
+}
+.otherjob .head .tag{
+	float:left;
+	padding-left:30px;
+	padding-top:4px;
+	line-height:30px;
+	background:url(head8.gif) left top no-repeat;
+	position:absolute;
+	left:-2px;
+	font-size:14px;
+	font-weight:bold;
+}
+.otherjob .cont{
+	border:#DCDCDC solid 1px;
+	border-top:0;
+	padding:10px;
+	line-height:23px;
+}
+.otherjob .cont .list{
+	height:23px;
+	overflow:hidden;
+	padding-left:15px;
+	background:url(icon3.gif) 3px 9px no-repeat;
+}
+.otherjob .cont .list a{
+	color:#2575B8;
+}
+.drag{
+	border:#BECED8 solid 1px;
+}
+.drag .head{
+	height:32px;
+	background:url(head6.gif) left top repeat-x;
+	position:relative;
+}
+.drag .head .tag{
+	position:absolute;
+	width:94px;
+	height:34px;
+	background:url(tag2.gif) left top no-repeat;
+	left:15px;
+	top:-1px;
+	text-align:center;
+	line-height:38px;
+	font-size:14px;
+	font-weight:bold;
+}
+.drag .cont{
+	padding:10px 20px 10px 20px;
+}
+.drag .cont .title{
+	height:25px;
+	line-height:25px;
+	color:#FF6A00;
+}
+.drag .cont .title span{
+	color:#666;
+	font-weight:bold;
+}
+.drag .cont .base div{
+	width:32%;
+	height:25px;
+	line-height:25px;
+	float:left;
+	color:#666;
+}
+.drag .cont .base div span{
+	color:#00f;
+}
+.drag .cont .h{
+	height:30px;
+	line-height:30px;
+	background:url(dotted.gif) left 14px repeat-x;
+	font-weight:bold;
+}
+.drag .cont .h .tag2{
+	float:left;
+	background:#FFF;
+	padding:0 5px 0 0;
+}
+.drag .cont .content,.drag .cont .companycont,.drag .cont .connect{
+	line-height:20px;
+	color:#666;
+}
+.drag .cont .joinjob{
+	padding:10px;
+	text-align:center;
+}
+.drag .cont .foot_do{
+	height:33px;
+	background:url(hr_appli2.gif) no-repeat center;
+}

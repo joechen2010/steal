@@ -1,0 +1,260 @@
+.MainContainer .side{
+	width:250px;
+	padding-left:10px;
+}
+.showcont .head{
+	height:29px;
+	overflow:hidden;
+	line-height:32px;
+	background:url(head4.gif) right top no-repeat;
+}
+.showcont .head .tag{
+	float:left;
+	padding-left:20px;
+	background:url(tag2.gif) left top no-repeat;
+}
+.showcont .head .tag span{
+	display:block;
+	padding-right:50px;
+	background:url(tag2.gif) right top no-repeat;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+}
+.showcont .head .more{
+	float:right;
+	padding-right:10px;
+	padding-top:2px;
+	word-spacing:10px;
+}
+.showcont .cont{
+	border:#C1DFF4 solid 1px;
+	padding:5px;
+}
+.baseinfo .pic{
+	width:160px;
+	padding:11px 20px 0 25px;
+	background:url(picbg.gif) center 5px no-repeat;
+}
+.baseinfo .pic a{
+	display:block;
+	text-align:center;
+}
+.baseinfo .pic .img{
+	margin-bottom:15px;
+	background:#efefef;
+	height:120px;
+	overflow:hidden;
+}
+.baseinfo .other{
+	padding-left:10px;
+}
+.baseinfo .other .title{
+	line-height:25px;
+	font-size:14px;
+	font-weight:bold;
+}
+.baseinfo .other .infoa{
+	line-height:25px;
+	color:#666;
+}
+.baseinfo .other .infob{
+	border-top:#FDDCB7 dotted 1px;
+	border-bottom:#FDDCB7 dotted 1px;
+	width:98%;
+}
+.baseinfo .other .infob td{
+	padding:5px 0 5px 0;
+}
+.baseinfo .other .infob div{
+	width:49%;
+	height:23px;
+	float:left;
+	line-height:23px;
+	overflow:hidden;
+}
+.baseinfo .other .infob div span{
+	color:#CC6500;
+	font-size:14px;
+}
+.baseinfo .shopbuy{
+	padding:10px 0 10px 80px;
+}
+.baseinfo .actionthis{
+	height:30px;
+	line-height:30px;
+}
+.baseinfo .actionthis a{
+	display:block;
+	float:right;
+	padding:0 20px 0 20px;	
+}
+.baseinfo .actionthis a.fav{
+	background:url(fav.gif) 5px 8px no-repeat;
+}
+.baseinfo .actionthis a.report{
+	background:url(report.gif) left 8px no-repeat;
+}
+.content .h{
+	height:26px;
+	background:url(head6.gif) left top repeat-x;
+	line-height:26px;
+}
+.content .h span{
+	display:block;
+	width:120px;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	background:url(tag3.gif) center top no-repeat;
+}
+.content .c{
+	padding:5px;
+	line-height:20px;
+	text-indent:25px;
+}
+.comment .head{
+	height:33px;
+	background:url(head5.gif) right top no-repeat;
+	line-height:33px;
+}
+.comment .head .tag{
+	float:left;
+	background:url(head5.gif) left top no-repeat;
+	padding-left:20px;
+	font-size:14px;
+	font-weight:bold;
+	color:#103957;
+}
+.comment .cont{
+	border-left:#C1DFF4 solid 1px;
+	border-right:#C1DFF4 solid 1px;
+}
+#comment{
+	padding:10px;
+}
+#comment .page{
+	text-align:center;
+	line-height:25px;
+}
+#comment .nocomment{
+	text-align:center;
+	padding:30px;
+	font-size:20px;
+	color:green;
+}
+.showcomment{
+	margin-top:5px;
+}
+.showcomment .img{
+	width:45px;
+	padding:10px 15px 10px 10px;
+	background:url(iconbg.gif) 6px 5px no-repeat;
+}
+.showcomment .conta{
+	padding-top:5px;
+	line-height:20px;
+}
+.showcomment .info{
+	line-height:25px;
+	border-top:#DDD solid 1px;
+	border-bottom:#DDD dotted 1px;
+}
+.showcomment .info span{
+	color:#f60;
+}
+.base_table{
+	border:#C1DFF4 solid 1px;
+	border-top:0;
+}
+.base_table .headb{
+	height:38px;
+	line-height:33px;
+	background:url(head5.gif) 80px top no-repeat;
+}
+.base_table .headb span{
+	float:left;
+	padding:0 80px 0 20px;
+	background:url(head5.gif) -10px top no-repeat;
+	font-size:14px;
+	font-weight:bold;
+	color:#103957;
+}
+.base_table .tdl{
+	width:100px;
+	text-align:right;
+	padding-right:10px;
+	line-height:25px;
+}
+#comment_submit{
+	margin:10px 0 10px 0;
+}
+/*
+*
+*/
+.companyinfo .head,.newsell .head{
+	height:33px;
+	line-height:33px;
+	background:url(head5.gif) right top no-repeat;
+}
+.companyinfo .head .tag,.newsell .head .tag{
+	background:url(head5.gif) left top no-repeat;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	color:#103957;
+	padding-left:15px;
+}
+.companyinfo .cont,.newsell .cont{
+	border:#C1DFF4 solid 1px;
+	border-top:0;
+}
+.companyinfo .cont .cname{
+	line-height:25px;
+	text-align:center;
+	font-size:14px;
+	height:25px;
+	padding:5px 5px 0 5px;
+	overflow:hidden;
+	font-weight:bold;
+	color:#f60;
+}
+.companyinfo .cont .showinfo{
+	padding:0 1px 0 1px;
+	line-height:23px;
+}
+.companyinfo .cont .showinfo div{
+	height:23px;
+	overflow:hidden;
+	padding-left:15px;
+	border-bottom:#DDD solid 1px;
+}
+.companyinfo .cont .img{
+	padding:10px 0 10px 0;
+	text-align:center;
+}
+.companyinfo .cont .word{
+	height:40px;
+	vertical-align:middle;
+	padding-left:20px;
+}
+.companyinfo .cont .word img{
+	vertical-align:middle;
+}
+.companyinfo .cont .note{
+	border-top:#DDD dotted 1px;
+	line-height:40px;
+	padding-left:40px;
+	background:url(light.gif) 20px 14px no-repeat;
+	color:#0000FF;
+}
+.newsell .cont {
+	padding:5px 0 10px 0;
+}
+.newsell .cont .list{
+	height:23px;
+	line-height:23px;
+	overflow:hidden;
+	padding:0 10px 0 25px;
+	background:url(icon.gif) 11px 8px no-repeat;
+}

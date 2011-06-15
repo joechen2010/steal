@@ -1,0 +1,117 @@
+.MainContainer .side{
+	width:250px;
+	padding-right:10px;
+}
+.sortcont .head{
+	height:35px;
+	line-height:35px;
+	background:url(head1.gif) right top no-repeat;
+	padding-right:10px;
+}
+.sortcont .head .tag{
+	background:url(head1.gif) left top no-repeat;
+	padding-left:10px;
+	text-align:center;
+	font-weight:bold;
+	font-size:16px;
+	color:#FFF;
+}
+.sortcont .cont{
+	border:#DDD solid 1px;
+	border-top:0;
+	padding:10px 0 10px 0;
+}
+.sortcont .cont .big{
+	padding-top:5px;
+	height:25px;
+	line-height:25px;
+	padding-left:40px;
+	background:url(bigsort.gif) 10px 6px no-repeat;
+	font-weight:bold;
+}
+.sortcont .cont .small{
+	padding:5px 10px 5px 40px;
+	line-height:20px;
+	white-space:10px;
+}
+.hotjob .head{
+	height:33px;
+	background:url(head2.gif) right top no-repeat;
+	position:relative;
+}
+.hotjob .head .tag{
+	float:left;
+	padding-left:30px;
+	padding-top:3px;
+	line-height:30px;
+	background:url(head2.gif) left top no-repeat;
+	position:absolute;
+	left:-2px;
+	font-size:14px;
+	font-weight:bold;
+}
+.hotjob .cont{
+	border:#DCDCDC solid 1px;
+	border-top:0;
+	padding:10px;
+	line-height:23px;
+}
+.hotjob .cont .list{
+	height:23px;
+	overflow:hidden;
+	padding-left:15px;
+	background:url(icon3.gif) 3px 9px no-repeat;
+}
+.hotjob .cont .list a{
+	color:#2575B8;
+}
+.drag{
+	border:#BECED8 solid 1px;
+}
+.drag .head{
+	height:32px;
+	background:url(head6.gif) left top repeat-x;
+	position:relative;
+}
+.drag .head .tag{
+	position:absolute;
+	width:94px;
+	height:34px;
+	background:url(tag2.gif) left top no-repeat;
+	left:15px;
+	top:-1px;
+	text-align:center;
+	line-height:38px;
+	font-size:14px;
+	font-weight:bold;
+}
+.drag .cont{
+	padding:10px;
+}
+.listtable td{
+	height:25px;
+	vertical-align:middle;
+	text-align:center;
+}
+.listtable td.td1{
+	width:20%;
+	text-align:left;
+}
+.listtable .h td.td1{
+	padding-left:15px;
+}
+.listtable td.td1 a{
+	display:block;
+	padding-left:15px;
+	line-height:25px;
+	background:url(array.gif) 6px 9px no-repeat;
+	font-weight:bold;
+}
+.listtable .h td{
+	border-bottom:#DDD dotted 1px;
+	font-weight:bold;
+	color:#2575B8;
+}
+.listtable .c2 td{
+	background:#FAFAFA;
+}
