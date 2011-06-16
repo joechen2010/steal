@@ -78,7 +78,7 @@ $webdb['SPbencandy_filename2']='showsp.php?fid-{$fid}-id-{$id}-page-{$page}.htm'
 $webdb['list_filename2']='list.php?fid-{$fid}-page-{$page}.htm';
 $webdb['emailOnly']='1';
 $webdb['close_count']='0';
-$webdb['Reg_Field']='a:1:{s:8:\\\\\\\"field_db\\\\\\\";a:0:{}}';
+$webdb['Reg_Field']='a:1:{s:8:\\\\\\\\\"field_db\\\\\\\\\";a:0:{}}';
 $webdb['passport_TogetherLogin']='1';
 $webdb['Listsortnameline']='2';
 $webdb['ListSonLeng']='34';
@@ -118,7 +118,7 @@ $webdb['Del_MoreUpfile']='1';
 $webdb['passport_pre']='`dz7`.cdb_';
 $webdb['hideFid']='';
 $webdb['RewriteUrl']='0';
-$webdb['mymd5']='37239337';
+$webdb['mymd5']='76933489';
 $webdb['companyTrade']='机械及行业设备
 普通机械制造
 通用零部件
@@ -251,7 +251,7 @@ $webdb['NewsMakeHtml']='0';
 $webdb['list_filename']='html/{$fid}/{$page}.htm';
 $webdb['bencandy_filename']='html/{$fid}-{$dirid}/{$id}-{$page}.htm';
 $webdb['AutoCutFace']='0';
-$webdb['passport_url']='http://localhost:1020/b/bbs';
+$webdb['passport_url']='http://localhost/steal/bbs';
 $webdb['FtpHost']='127.0.0.1';
 $webdb['memberNotice']='欢迎大家踊跃投稿,投稿可得积分奖励!!';
 $webdb['member_contact']=' <div class=t>020-88888888</div>
@@ -272,7 +272,7 @@ $webdb['upfileMaxSize']='';
 $webdb['totalSpace']='100';
 $webdb['time']='0';
 $webdb['admin_url']='admin';
-$webdb['www_url']='http://localhost:1020/b';
+$webdb['www_url']='http://localhost/steal';
 $webdb['style_member']='';
 $webdb['style']='blue';
 $webdb['close_why']='网站维护当中,

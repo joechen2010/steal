@@ -6,8 +6,8 @@
 $dbhost = 'localhost';		// 数据库服务器(一般不必改)
 $dbuser = 'root';			// 数据库用户名
 $dbpw = 'root';					// 数据库密码
-$dbname = 'b2b';				// 数据库名
-$pre='qb_';				// 网站表区分符 
+$dbname = 'steal';				// 数据库名
+$pre='b2b_';				// 网站表区分符 
 
 $database = 'mysql';		// 数据库类型(一般不必改)
 $pconnect = 0;				// 数据库是否持久连接(一般不必改)
